@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA AI NI</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: fuchsia;
+            background: rgb( #ffff00, #008000, blue);
+            background: linear-gradient(90deg,#ff0000,#008000,yellow,blue);
+
+        }
+        form{
+            color: palegreen;
+            width: fit-content;
+            padding: 50px;
+            background-color: #8b008b;
+            box-shadow: -30px 30px 50px #0000ff;
+            border-radius: 50px;
+            transition: .9s;
+            
+        }
+        input{
+            transition: .4s;
+        }
+        form:hover{
+            transform: translate(-40px,40px);
+            box-shadow: 40px 20px 30px navy;
+        }
+        input:hover{
+            box-shadow: -4px 4px 30px brown;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+        <h1>POOJAAA</h1>
+        <form  method="POST">
+            {% csrf_token %}
+            {{TMFO.as_p}}
+
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>
